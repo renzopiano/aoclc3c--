@@ -1,0 +1,1497 @@
+.ORIG x3000
+BRnzp #2
+.FILL #65023
+.FILL #13230
+LD R0, #-2
+LD R6, #-4
+JSRR R0
+TRAP #37
+AND R2, R2, #0
+AND R1, R1, R1
+BRz #8
+BRp #4
+NOT R0, R0
+ADD R0, R0, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R2, R2, R0
+ADD R1, R1, #-1
+BRnp #-3
+ADD R0, R2, #0
+RET
+AND R2, R2, #0
+AND R3, R3, #0
+AND R0, R0, R0
+BRn #5
+BRp #1
+TRAP #37
+NOT R0, R0
+ADD R0, R0, #1
+BRnzp #1
+ADD R3, R3, #1
+AND R1, R1, R1
+BRp #3
+ADD R3, R3, #1
+NOT R1, R1
+ADD R1, R1, #1
+BRnzp #1
+ADD R2, R2, #1
+ADD R1, R1, R0
+BRzp #-3
+AND R3, R3, #1
+BRz #2
+NOT R2, R2
+ADD R2, R2, #1
+ADD R0, R2, #0
+RET
+AND R2, R2, #0
+AND R0, R0, R0
+BRp #3
+BRn #1
+TRAP #37
+BRnzp #2
+NOT R0, R0
+ADD R0, R0, #1
+AND R1, R1, R1
+BRp #3
+ADD R2, R2, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R1, R1, R0
+BRzp #-2
+NOT R0, R0
+ADD R0, R0, #1
+ADD R1, R1, R0
+AND R2, R2, R2
+BRz #2
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, #0
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+TRAP #32
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+LDR R0, R6, #2
+TRAP #33
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #0
+AND R4, R4, #0
+ADD R4, R4, #-1
+ADD R6, R6, R4
+BRnzp #1
+.FILL #12357
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-1
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+AND R4, R4, #0
+ADD R4, R4, #1
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #0
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRzp #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #19
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #9
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRzp #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRz #20
+BRnzp #1
+.FILL #48
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+BRnzp #1
+.FILL #65
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #10
+NOT R0, R0
+ADD R0, R0, #1
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #0
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12308
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12308
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12333
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12308
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12333
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12333
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12308
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12308
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12333
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12308
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12333
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #16
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12333
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12418
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #10
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12363
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #1
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #0
+AND R4, R4, #0
+ADD R4, R4, #-2
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-2
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #1
+.FILL #12374
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-1
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #86
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #10
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #12
+AND R0, R0, #0
+ADD R0, R0, #1
+NOT R0, R0
+ADD R0, R0, #1
+AND R4, R4, #0
+ADD R4, R4, #2
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #4
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #12
+AND R0, R0, #0
+ADD R0, R0, #2
+NOT R0, R0
+ADD R0, R0, #1
+AND R4, R4, #0
+ADD R4, R4, #2
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+BRnzp #1
+.FILL #12374
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-1
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+AND R0, R0, R0
+BRz #38
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #48
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+AND R0, R0, R0
+BRz #3
+AND R0, R0, #0
+ADD R0, R0, #1
+BRnzp #16
+BRnzp #1
+.FILL #57
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRnp #-134
+BRnzp #51
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #10
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-2
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #48
+LD R0, #-2
+NOT R0, R0
+ADD R0, R0, #1
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+AND R1, R1, #0
+ADD R1, R1, #-2
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #1
+.FILL #12374
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-1
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #1
+.FILL #48
+LD R0, #-2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRzp #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #20
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #57
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRzp #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRnp #-96
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #4
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #12
+AND R0, R0, #0
+ADD R0, R0, #2
+NOT R0, R0
+ADD R0, R0, #1
+AND R4, R4, #0
+ADD R4, R4, #2
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-2
+ADD R0, R5, R0
+LDR R0, R0, #0
+AND R4, R4, #0
+ADD R4, R4, #2
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+ADD R6, R6, #-1
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #0
+AND R4, R4, #0
+ADD R4, R4, #-8
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-2
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-1
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-3
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #1
+BRnzp #6
+BRnzp #1
+.FILL #458
+LD R4, #-2
+LEA R3, #0
+ADD R3, R3, R4
+JMP R3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+BRnzp #1
+.FILL #12925
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-4
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #1
+NOT R0, R0
+ADD R0, R0, #1
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-4
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+AND R0, R0, R0
+BRz #1
+BRnzp #6
+BRnzp #1
+.FILL #382
+LD R4, #-2
+LEA R3, #0
+ADD R3, R3, R4
+JMP R3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-8
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R1, R1, #0
+ADD R1, R1, #-7
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R1, R1, #0
+ADD R1, R1, #-6
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #179
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+BRnzp #1
+.FILL #12374
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-3
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #-3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #114
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #18
+AND R0, R0, #0
+ADD R0, R0, #-6
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRz #8
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-6
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #103
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #18
+AND R0, R0, #0
+ADD R0, R0, #-7
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRz #8
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-7
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #98
+LD R0, #-2
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #18
+AND R0, R0, #0
+ADD R0, R0, #-8
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRz #8
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+AND R1, R1, #0
+ADD R1, R1, #-8
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #1
+NOT R0, R0
+ADD R0, R0, #1
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12925
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #0
+ADD R6, R6, R1
+AND R1, R1, #0
+ADD R1, R1, #-5
+ADD R1, R5, R1
+STR R0, R1, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+AND R0, R0, R0
+BRnp #-205
+AND R0, R0, #0
+ADD R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-6
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-7
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-8
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRzp #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #16
+AND R0, R0, #0
+ADD R0, R0, #-2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRp #1
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R0, R0, R0
+BRz #7
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R1, R0, #0
+ADD R2, R1, #1
+STR R2, R0, #0
+ADD R0, R1, #0
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-6
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-7
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-8
+ADD R0, R5, R0
+LDR R0, R0, #0
+LDR R1, R6, #0
+ADD R6, R6, #1
+BRnzp #1
+.FILL #12295
+LD R2, #-2
+JSRR R2
+LDR R1, R6, #0
+ADD R6, R6, #1
+ADD R0, R1, R0
+AND R1, R1, #0
+ADD R1, R1, #-2
+ADD R1, R5, R1
+STR R0, R1, #0
+AND R0, R0, #0
+ADD R0, R0, #-5
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #2
+NOT R0, R0
+ADD R0, R0, #1
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #6
+AND R0, R0, #0
+ADD R0, R0, #4
+AND R1, R1, #0
+ADD R1, R1, #-3
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-4
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #2
+NOT R0, R0
+ADD R0, R0, #1
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #6
+AND R0, R0, #0
+ADD R0, R0, #4
+AND R1, R1, #0
+ADD R1, R1, #-3
+ADD R1, R5, R1
+STR R0, R1, #0
+BRnzp #3
+AND R4, R4, #0
+ADD R4, R4, #0
+ADD R6, R6, R4
+AND R0, R0, #0
+ADD R0, R0, #-3
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #4
+LDR R1, R6, #0
+ADD R6, R6, #1
+NOT R1, R1
+ADD R1, R1, #1
+ADD R0, R1, R0
+BRz #2
+AND R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRz #3
+AND R0, R0, #0
+ADD R0, R0, #0
+BRnzp #2
+AND R0, R0, #0
+ADD R0, R0, #1
+AND R0, R0, R0
+BRnp #1
+BRnzp #6
+BRnzp #1
+.FILL #-488
+LD R4, #-2
+LEA R3, #0
+ADD R3, R3, R4
+JMP R3
+AND R0, R0, #0
+ADD R0, R0, #-2
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+AND R0, R0, #0
+ADD R0, R0, #-1
+ADD R0, R5, R0
+LDR R0, R0, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+BRnzp #1
+.FILL #12522
+LD R0, #-2
+JSRR R0
+AND R1, R1, #0
+ADD R1, R1, #2
+ADD R6, R6, R1
+AND R0, R0, #0
+ADD R0, R0, #0
+AND R4, R4, #0
+ADD R4, R4, #8
+ADD R6, R6, R4
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+.END
